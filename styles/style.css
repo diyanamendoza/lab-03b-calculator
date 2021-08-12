@@ -111,3 +111,18 @@ footer {
     }
 
   }
+
+
+  .math-buttons > button {
+    display:inline-flex;
+    margin-top:20px;
+    align-items:center;
+    justify-content: center;
+    background-color:black;
+    color:white;
+    border-radius:8px;
+    height: 35px;
+    width: 75px;
+    font-family:monospace;
+    padding: 5px;
+  }
