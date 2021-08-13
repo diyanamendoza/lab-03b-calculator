@@ -1,3 +1,6 @@
+// Import things
+import { addIt, subtractIt, multiplyIt, divideIt } from './utils.js';
+
 // Access elements
 const numOne = document.getElementById('num1');
 const numTwo = document.getElementById('num2');
@@ -8,36 +11,26 @@ const divideButton = document.getElementById('divide-button');
 const clearButton = document.getElementById('clear-button');
 const mathResult = document.getElementById('math-result');
 const mathAction = document.getElementById('math-action');
+const addCount = document.getElementById('add-count');
 
-
-// function calculateAnswer () {
-//   if (addButton.clicked == true) {
- 
-//   }
-// }
+// let addCounter = 0;
 
 addButton.addEventListener('click', () => {
-  let answer = (Number(numOne.value) + Number(numTwo.value));
-  mathResult.textContent = `= ${answer}`;
-  mathAction.textContent = "+";
+  addIt(numOne, numTwo);
+  // addCounter++;
+  // addCount.textContent = `You have clicked Add ${addCounter} time(s)!`;
 })
 
 subtractButton.addEventListener('click', () => {
-  let answer = (Number(numOne.value) - Number(numTwo.value));
-  mathResult.textContent = `= ${answer}`;
-  mathAction.textContent = "-";
+  subtractIt(numOne, numTwo);
 })
 
 multiplyButton.addEventListener('click', () => {
-  let answer = (Number(numOne.value) * Number(numTwo.value));
-  mathResult.textContent = `= ${answer}`;
-  mathAction.textContent = "*";
+  multiplyIt(numOne, numTwo);
 })
 
 divideButton.addEventListener('click', () => {
-  let answer = (Number(numOne.value) / Number(numTwo.value));
-  mathResult.textContent = `= ${answer}`;
-  mathAction.textContent = "/";
+  divideIt(numOne, numTwo);
 })
 
 clearButton.addEventListener('click', () => {
