@@ -11,26 +11,46 @@ const addCount = document.getElementById('add-count');
 
 
 export function addIt (numOne, numTwo) {
+    if ((isNaN(Number(numOne.value)) === false) && (isNaN(Number(numTwo.value)) === false)) {
     let answer = (Number(numOne.value) + Number(numTwo.value));
     mathResult.textContent = `= ${answer}`;
     mathAction.textContent = "+";
+    }
+    else {
+        alert('Please enter a number.');
+    }
 }
   
 export function subtractIt (numOne, numTwo) {
+    if ((isNaN(Number(numOne.value)) === false) && (isNaN(Number(numTwo.value)) === false)) {
     let answer = (Number(numOne.value) - Number(numTwo.value));
     mathResult.textContent = `= ${answer}`;
     mathAction.textContent = "-";
+        }
+    else {
+        alert('Please enter a number.');
+    }
 }
   
 export function multiplyIt (numOne, numTwo) {
+    if ((isNaN(Number(numOne.value)) === false) && (isNaN(Number(numTwo.value)) === false)) {
     let answer = (Number(numOne.value) * Number(numTwo.value));
     mathResult.textContent = `= ${answer}`;
     mathAction.textContent = "*";
+        }
+    else {
+        alert('Please enter a number.');
+    }
 }
   
 export function divideIt (numOne, numTwo) {
+    if ((isNaN(Number(numOne.value)) === false) && (isNaN(Number(numTwo.value)) === false)) {
     let answer = (Number(numOne.value) / Number(numTwo.value));
     mathResult.textContent = `= ${answer}`;
     mathAction.textContent = "/";
+        }
+    else {
+        alert('Please enter a number.');
+    }
 }
   
