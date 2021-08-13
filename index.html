@@ -14,30 +14,29 @@
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
-        </div>
+        <h2>
+            Calculator
+        </h2>
     </header>
     <main>
-        <section class="main-section">
-            <h2>
-                Calculator
-            </h2>
-            <input id="num1" placeholder="Type a number" />
+        <section class="operator">
             <h2 id="math-action"></h2>
-            <input id="num2" placeholder="Type a number" />
-           <div class="math-buttons">
-                <button id="add-button">Add</button>
-                <button id="subtract-button">Subtract</button>
-                <button id="multiply-button">Multiply</button>
-                <button id="divide-button">Divide</button>
-                <button id="clear-button">Clear</button>
-           </div>
-           <h2 id="math-result"></h2>
-           <div class="counters">
-               <h3 id="add-count"></h3>
-           </div>
         </section>
+        <section class="in-out">
+            <input id="num1" placeholder="Type a number" />   
+            <input id="num2" placeholder="Type a number" />
+            <h2 id="math-result"></h2>
+        </section>
+        <section class="math-buttons">
+            <button id="add-button">Add</button>
+            <button id="subtract-button">Subtract</button>
+            <button id="multiply-button">Multiply</button>
+            <button id="divide-button">Divide</button>
+            <button id="clear-button">Clear</button>
+        </section>
+           <!-- <div class="counters">
+               <h3 id="add-count"></h3>
+           </div> -->        
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
